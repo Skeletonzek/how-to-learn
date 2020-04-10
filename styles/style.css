@@ -1,31 +1,318 @@
 .page {
-    min-width: 1100px;
-    /* мы ещё не умеем делать мобильную версию сайта, */
-    /* поэтому выше установлена минимальная ширина страницы */
-    max-width: 1600px;
-    /* выше установили ограничение по максимальной ширине */
-    margin: 0 auto;
-    /* выше для экранов больше 1600px отцентрировали весь контент */
-    font-family: 'Helvetica Neue', Arial, sans-serif;
+  min-width: 1100px;
+  /* мы ещё не умеем делать мобильную версию сайта, */
+  /* поэтому выше установлена минимальная ширина страницы */
+  max-width: 1600px;
+  /* выше установили ограничение по максимальной ширине */
+  margin: 0 auto;
+  /* выше для экранов больше 1600px отцентрировали весь контент */
+  font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
 .header {
-    height: 100vh;
-    min-height: 600px;
-    max-height: 756px;
-    /* выше установили ограничения для секции */
+  position: relative;
+  display: flex;
+  height: 100vh;
+  min-height: 600px;
+  max-height: 756px;
+  background-color: #f2f2f2;
+  /* выше установили ограничения для секции */
 }
 
+.logo {
+  width: 183px;
+}
+
+.logo_place_header {
+  background-image: url(../images/logo.svg);
+  height: 32px;
+  top: 30px;
+  left: 64px;
+  position: absolute;
+}
+
+.header__title {
+  width: 730px;
+  margin: auto 64px;
+}
+
+.header__title_text {
+  font-size: 102px;
+  font-weight: bold;
+  line-height: 96px;
+}
+
+.header__subtitle {
+  margin: 0;
+  position: absolute;
+  width: 388px;
+  left: 64px;
+  bottom: 30px;
+}
+
+.header__subtitle_text {
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 25px;
+}
+
+.header__link {
+  text-decoration-line: none;
+  color: #2f80ed;
+}
+
+.header__main-illustration {
+  position: absolute;
+  width: 765px;
+  height: 608px;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+}
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
 .header__square-pic {
-    height: 568px;
-    width: 568px;
+  background-color: #2f80ed;
+  position: absolute;
+  top: 64px;
+  right: 0;
+  height: 568px;
+  width: 568px;
+}
+
+.description{
+  margin: 100px auto 0;
+}
+
+.two-columns {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+
+/*Почему блок .two-columns не центрируется по горизонтали
+свойством margin: 0 auto; из класса .page?
+Ответьте пожалуйста, в интернете ответа не нашел(*/
+
+.two-columns__brief {
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+  width: 175px;
+  color: #2f80ed;
+  text-decoration-line: none;
+}
+
+.two-columns__main-text {
+  width: 80%;
+  min-width: 784px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.two-columns__paragraph {
+  margin-bottom: 30px;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.two-columns__paragraph:last-of-type {
+  margin-bottom: 0;
+}
+
+.two-columns__span-accent {
+  font-weight: bold;
+}
+
+.digits {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.section-title {
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 69px;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.section-subtitle {
+  width: 60%;
+  margin: 20px auto 0;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  text-align: center;
+}
+
+.table {
+  display: flex;
+  width: 1100px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style-type: none;
+  margin: auto;
+  padding: 0;
+}
+
+.table__cell {
+  width: 250px;
+  margin-top: 60px;
+}
+
+.table__heading {
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.table__text {
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+.feynman {
+  position: relative;
+  height: 790px;
+  background-color: #f2f2f2;
+  background-image: url(../images/feinman.png);
+  background-repeat: no-repeat;
+  background-size: 867px 637px;
+  background-position: left bottom;
+}
+
+.feynman__title {
+  width: 648px;
+  line-height: 1.15;
+  font-size: 120px;
+  font-weight: bold;
+  text-align: center;
+  margin: auto;
+}
+
+.feynman__subtitle {
+  margin: 70px auto;
+  text-align: center;
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+}
+
+.feynman__link {
+  position: absolute;
+  top: 50%;
+  right: 48px;
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+  text-decoration-line: none;
+  color: #2f80ed;
+}
+
+.kaufman {
+  position: relative;
+  overflow: hidden;
+  padding-top: 90px;
+  padding-bottom: 90px;
+  background-color: #000;
+}
+
+.kaufman__triangle {
+  position: absolute;
+  width: 877px;
+  height: 877px;
+  right: -210px;
+  top: 0;
+}
+
+.section-title_theme_dark, .section-subtitle_theme_dark{
+  color: #fff;
 }
 
 /* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {
-    width: 200px;
-    color: white;
-    margin-right: 0;
-    margin-top: 80px;
+  width: 200px;
+  color: white;
+  margin-right: 0;
+  margin-top: 80px;
+  z-index: 1;
+}
+
+.footer {
+  background-color: #000;
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+
+.footer__columns {
+  width: 90%;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  min-height: 350px;
+}
+
+.footer__column_content_copyright {
+  flex-basis: 711px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer__column_content_info, .footer__column_content_social {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.logo_place_footer {
+  background-image: url(../images/logo_white.svg);
+  height: 35px;
+}
+
+.footer__author {
+  color: #fff;
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+  margin-top: 18px;
+  margin-bottom: 18px;
+}
+
+.footer__column-heading  {
+  margin: 0;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.footer__column-links {
+  margin: 20px 0 16px;
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer__column-links_text {
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: normal;
+  text-decoration-line: none;
+  color: #fff;
+}
+
+.footer__social-icons {
+  margin-right: 10px;
+  width: 16px;
+  height: 16px;
 }
