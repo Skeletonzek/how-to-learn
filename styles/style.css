@@ -34,9 +34,6 @@
 .header__title {
   width: 730px;
   margin: auto 64px;
-}
-
-.header__title_text {
   font-size: 102px;
   font-weight: bold;
   line-height: 96px;
@@ -48,9 +45,6 @@
   width: 388px;
   left: 64px;
   bottom: 30px;
-}
-
-.header__subtitle_text {
   font-size: 18px;
   font-weight: normal;
   line-height: 25px;
@@ -59,6 +53,11 @@
 .header__link {
   text-decoration-line: none;
   color: #2f80ed;
+  opacity: .75;
+}
+
+.header__link:hover {
+  opacity: 1;
 }
 
 .header__main-illustration {
@@ -80,20 +79,18 @@
 }
 
 .description{
-  margin: 100px auto 0;
+  margin-top: 100px;
 }
 
 .two-columns {
   display: flex;
   justify-content: space-between;
   width: 80%;
+  margin: 0 auto;
 }
 
-/*Почему блок .two-columns не центрируется по горизонтали
-свойством margin: 0 auto; из класса .page?
-Ответьте пожалуйста, в интернете ответа не нашел(*/
-
 .two-columns__brief {
+  margin: 0;
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
@@ -111,6 +108,7 @@
 }
 
 .two-columns__paragraph {
+  margin-top: 0;
   margin-bottom: 30px;
   line-height: 34px;
   font-size: 24px;
@@ -179,6 +177,7 @@
 }
 
 .feynman {
+  padding-top: 100px;
   position: relative;
   height: 790px;
   background-color: #f2f2f2;
@@ -213,7 +212,12 @@
   font-size: 36px;
   font-weight: normal;
   text-decoration-line: none;
-  color: #2f80ed;
+  color: #000;
+  opacity: .75;
+}
+
+.feynman__link:hover {
+  opacity: 1;
 }
 
 .kaufman {
@@ -221,10 +225,13 @@
   overflow: hidden;
   padding-top: 90px;
   padding-bottom: 90px;
-  background-color: #000;
+  background-color: #1f1f1f;
 }
 
 .kaufman__triangle {
+  background-image: url(../images/triangle.svg);
+  background-size: contain;
+  background-position: center;
   position: absolute;
   width: 877px;
   height: 877px;
@@ -246,7 +253,7 @@
 }
 
 .footer {
-  background-color: #000;
+  background-color: #1f1f1f;
   padding-top: 60px;
   padding-bottom: 40px;
 }
@@ -264,15 +271,6 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-.footer__column_content_info, .footer__column_content_social {
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
 }
 
 .logo_place_footer {
@@ -303,15 +301,20 @@
   padding: 0;
 }
 
-.footer__column-links_text {
+.footer__column-link {
   line-height: 30px;
   font-size: 18px;
   font-weight: normal;
   text-decoration-line: none;
   color: #fff;
+  opacity: .75;
 }
 
-.footer__social-icons {
+.footer__column-link:hover {
+  opacity: 1;
+}
+
+.footer__social-icon {
   margin-right: 10px;
   width: 16px;
   height: 16px;
