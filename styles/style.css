@@ -226,6 +226,7 @@
   padding-top: 90px;
   padding-bottom: 90px;
   background-color: #1f1f1f;
+  border: 3px solid red;
 }
 
 .kaufman__triangle {
@@ -238,6 +239,9 @@
   right: -210px;
   top: 0;
 }
+/*Заметил такой момент: когда у меня на ноутубке стоял масштаб экрана 125%, то
+маленький кусочек угла треугольника прорисовывался отдельно примерно чуть выше
+и левее цифпы "10", если вас не затруднит, скажите пожалуйста почему так происходит?*/
 
 .section-title_theme_dark, .section-subtitle_theme_dark{
   color: #fff;
