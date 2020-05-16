@@ -6,7 +6,11 @@
   <link rel="stylesheet" type="text/css" href="./pages/index.css">
   <title>Научиться учиться</title>
 </head>
-<body class="page">
+<body>
+<!-- Насчёт <body class="page"> это была не моя задумка, так было изначально в 1ой проектной работе
+  и в текущем спринте в теме "Глобальные стили" их подключали тоже через body, поэтому я немного запутался,
+  как все таки будет лучше?-->
+<div class="page">
   <header class="header">
     <div class="logo logo_place_header"></div>
     <h1 class="header__title">Научиться учиться</h1>
@@ -213,10 +217,10 @@
       <h2 class="section-title">Полезные ресурсы</h2>
       <p class="section-subtitle">Больше материалов о техниках и лайфхаках обучения</p>
       <ul class="resources__logo-zone">
-        <li class="resources__logo-zone_type_list"><a href="#"><img class="resources__logo" src="./images/logo/resources-arzamas.svg" alt="arzamas"></a></li>
-        <li class="resources__logo-zone_type_list"><a href="#"><img class="resources__logo" src="./images/logo/resources-n1.svg" alt="n1"></a></li>
-        <li class="resources__logo-zone_type_list"><a href="#"><img class="resources__logo" src="./images/logo/resources-strelka.svg" alt="strelka"></a></li>
-        <li class="resources__logo-zone_type_list"><a href="#"><img class="resources__logo" src="./images/logo/resources-polka.svg" alt="polka"></a></li>
+        <li class="resources__logo-list"><a href="#"><img class="resources__logo" src="./images/logo/resources-arzamas.svg" alt="arzamas"></a></li>
+        <li class="resources__logo-list"><a href="#"><img class="resources__logo" src="./images/logo/resources-n1.svg" alt="n1"></a></li>
+        <li class="resources__logo-list"><a href="#"><img class="resources__logo" src="./images/logo/resources-strelka.svg" alt="strelka"></a></li>
+        <li class="resources__logo-list"><a href="#"><img class="resources__logo" src="./images/logo/resources-polka.svg" alt="polka"></a></li>
       </ul>
     </section>
     </main>
@@ -260,5 +264,6 @@
       </nav>
     </div>
     </footer>
+</div>
 </body>
 </html>

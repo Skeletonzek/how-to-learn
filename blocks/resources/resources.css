@@ -1,6 +1,6 @@
 @import url(./__logo-zone/resources__logo-zone.css);
 @import url(./__logo/resources__logo.css);
-@import url(./__logo-zone/_type/resources__logo-zone_type_list.css);
+@import url(./__logo-list/resources__logo-list.css);
 
 .resources {
   margin: 0 auto;
